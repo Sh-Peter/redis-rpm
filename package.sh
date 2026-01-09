@@ -13,6 +13,7 @@ rm -rf build *.rpm
 mkdir -p build/usr/bin
 cp deps/redis*/* build/usr/bin
 chmod 0755 build/usr/bin/*
+# debug
 set -x
 fpm \
     -s dir \
